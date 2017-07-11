@@ -8,4 +8,4 @@ RUN pip install nibabel scikit-image
 COPY bone_seg.py /bone_seg.py
 
 # Make our script the executable that will be run via "docker run"
-ENTRYPOINT python /bone_seg.py
+ENTRYPOINT ["python", "/bone_seg.py"]
